@@ -46,6 +46,7 @@ public class Knightbook {
                 String subject = s.nextLine();
                 list.add(new Teacher(first, last, age, salary, subject));
                 // TODO #3: Add a Teacher class so this runs correctly!
+
             }
         }
     }
