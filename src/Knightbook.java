@@ -9,6 +9,7 @@ public class Knightbook {
 
     public Knightbook() {
         // TODO #1: Instantiate your instance variable, list!
+        ArrayList<Person> list = new ArrayList<Person>();
     }
 
     public void fillFromFile() {
@@ -51,6 +52,9 @@ public class Knightbook {
 
     public void printAll() {
         // TODO #4: Finish this method so all members of the list are printed!
+        for (Person person : list) {
+            System.out.println(person);
+        }
     }
 
     /**
@@ -60,6 +64,12 @@ public class Knightbook {
      */
     public Person find(String firstName) {
         // TODO #5: Finish this method
+        for (Person person : list) {
+            if(person.getFirstName().toLowerCase().equals(firstName.toLowerCase()))
+            {
+                return person;
+            }
+        }
         return null;
     }
 
