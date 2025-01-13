@@ -9,7 +9,7 @@ public class Knightbook {
 
     public Knightbook() {
         // TODO #1: Instantiate your instance variable, list!
-        ArrayList<Person> list = new ArrayList<Person>();
+        this.list = new ArrayList<>();
     }
 
     public void fillFromFile() {

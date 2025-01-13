@@ -16,5 +16,8 @@ public class MenloStudent extends Person {
     public void setAdvocate(String advocate) {
         this.advocate = advocate;
     }
+    public String toString() {
+        return super.toString() + "\nGrade: " + grade + "\nAdvocate: " + advocate;
+    }
 
 }
